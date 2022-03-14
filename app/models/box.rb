@@ -4,7 +4,7 @@ class Box < ApplicationRecord
   belongs_to :category
 
   has_many   :items,
-             :dependent => :destroy
+             dependent: :destroy
 
   # Indirect associations
 
@@ -15,5 +15,4 @@ class Box < ApplicationRecord
   def to_s
     box_name
   end
-
 end

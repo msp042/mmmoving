@@ -6,8 +6,8 @@ class Item < ApplicationRecord
   # Indirect associations
 
   has_one    :category,
-             :through => :box,
-             :source => :category
+             through: :box,
+             source: :category
 
   # Validations
 
@@ -16,5 +16,4 @@ class Item < ApplicationRecord
   def to_s
     item_name
   end
-
 end
