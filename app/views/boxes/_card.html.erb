@@ -12,7 +12,11 @@
 
       <dt>Category</dt>
       <!-- Display category_id start -->
-      <dd><%= box.category_id %></dd>
+      <dd>
+        <% if @box.category.present? %>
+          <%= link_to box.category, box.category %>
+        <% end %>
+      </dd>
       <!-- Display category_id end -->
 
     </dl>
